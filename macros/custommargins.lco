@@ -13,5 +13,3 @@
   \@addtoplength{firstfootvpos}{\footskip}
 \fi
 \makeatother
-
-

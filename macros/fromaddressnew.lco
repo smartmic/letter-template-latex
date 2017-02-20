@@ -1,33 +1,3 @@
-%% brief-template-latex
-%% 
-%% fromaddressnew.lco
-%% Copyright 2010,2017 Martin Michel
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License, either version 1.3
-% of this license or (at your option) any later version.
-% The latest version of this license is in
-%   http://www.latex-project.org/lppl.txt
-% and version 1.3 or later is part of all distributions of LaTeX
-% version 2005/12/01 or later.
-%
-% This work has the LPPL maintenance status `maintained'.
-% 
-% The Current Maintainer of this work is Martin Michel
-%
-% This work consists of the files :
-% dateup.lco
-% footseperated.lco
-% fromaddressnew.lco
-% nowindow.lco
-% textwidth.lco
-%
-% The template uses the KOMA-Script class 'scrlttr2' (2010/06/17
-% v3.06) 
-% Please visit 
-%   https://sourceforge.net/projects/koma-script/ 
-% for download of latest version
-
 \XeTeXinputencoding cp-1252
 \ProvidesFile{fromaddressnew.lco}
 \setkomavar{fromname}{Genevieve Boesch}
