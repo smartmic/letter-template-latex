@@ -1,0 +1,17 @@
+\makeatletter
+\@setplength{toaddrvpos}{40mm}
+\@setplength{sigbeforevskip}{4\baselineskip}
+\ifnum \scr@compatibility >\@nameuse{scr@v@2.9t}\relax
+  \@setplength{firstfootvpos}{\paperheight}
+  \@addtoplength{firstfootvpos}{-28mm}
+\else
+  \@setplength{firstfootvpos}{1in}
+  \@addtoplength{firstfootvpos}{\topmargin}
+  \@addtoplength{firstfootvpos}{\headheight}
+  \@addtoplength{firstfootvpos}{\headsep}
+  \@addtoplength{firstfootvpos}{\textheight}
+  \@addtoplength{firstfootvpos}{\footskip}
+\fi
+\makeatother
+
+

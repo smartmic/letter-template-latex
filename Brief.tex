@@ -1,0 +1,114 @@
+%% brief-template-latex
+%%
+%% Latex source files for customized letters
+%% 
+%% Copyright 2010,2017 Martin Michel
+%%
+%% The layout of this letter is CC-BY licensed, see
+%% https://creativecommons.org/licenses/by/3.0/
+%
+% This work consists of the files :
+% brief.tex
+% fonts/fontselect.lco
+% macros/custommargins.lco
+% macros/dateup.lco
+% macros/footseperated.lco
+% macros/fromaddressnew.lco
+% macros/nowindow.lco
+% macros/textwidth.lco
+%
+% The template uses the KOMA-Script class 'scrlttr2' (2010/06/17
+% v3.06) 
+% Please visit 
+%   https://sourceforge.net/projects/koma-script/ 
+% for download of latest version
+% 
+% Download or replace the appropriate fonts for customization
+
+% Check if the following is required on your Latex system
+\XeTeXinputencoding cp-1252
+
+% the key/value pairs are self-explanatory, change or comment them out
+% as appropriate
+\documentclass[
+ fontsize=12pt,         
+ paper=a4,             
+ DIV=14,              
+ BCOR=5mm,              
+ pagenumber=footcenter,
+ parskip=half*,       
+ german,              
+ raggedright
+ ]{scrlttr2}        
+
+\KOMAoptions{
+ fromalign=left,
+ fromrule=afteraddress,
+ fromphone=false,
+ fromemail=false,
+ fromurl=false,
+ foldmarks=false,
+ backaddress=true,
+ addrfield=true,
+ %footsepline=true,
+ %headsepline=true
+ enlargefirstpage=true
+}
+
+% Please change language/localization settings if necessary
+\usepackage{fontspec}
+\usepackage{xunicode}
+%\usepackage{xltxtra}
+\usepackage[ngerman]{babel}     
+%\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+
+
+\LoadLetterOption{DIN}
+\firsthead{
+   \flushright
+         \fontsize{20}{20}
+         \scshape
+         \headerfont      % Uncomment to use specified header font
+         \usekomavar{fromname}\\[5mm]
+   %\hrule  height  1pt   % Uncomment to add a rule after your name
+}
+
+% Activate and edit this macro to change fonts or install the used ones (TTF):
+\LoadLetterOption{fonts/fontselect}   
+
+% Enter your address / contact data here:
+\LoadLetterOption{macros/fromaddressnew}
+
+\LoadLetterOption{macros/custommargins}
+%\LoadLetterOption{macros/nowindow}
+%\LoadLetterOption{macros/dateup}
+\LoadLetterOption{macros/footseperated}   % Change language 
+\renewcommand*{\raggedsignature}{\raggedright}
+
+% Write the letter ...
+\begin{document}
+
+\begin{letter}{Empfänger}
+\setkomavar{toname}{Krones \\ Ulrich Ackermann}
+\setkomavar{toaddress}{Große Freiheit 201 \\ 72777 Cottbus}
+\setkomavar{place}{Cottbus}
+%\setkomavar{title}{}
+\setkomavar{subject}{Aus Schaden wird man klug. \\ Kundennummer 16441}
+\setkomavar{signature}{Genevieve Boesch}
+
+\opening{Sehr geehrter Herr Ulrich Ackermann,}
+
+\begin{flushleft}
+Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Das bedeutete nichts Gutes.
+
+Es gibt keine deutsche Mannschaft spielt offensiv und die Name offensiv wie Bayern. Ich lese nicht sehr viele Zeitungen, aber ich habe gehört viele Situationen. In diese Spiel es waren zwei, drei diese Spieler waren schwach wie eine Flasche leer! Haben Sie gesehen Mittwoch, welche Mannschaft hat gespielt Mittwoch? So gibt es Regeln für HTML, CSS, JavaScript oder auch XML; Worte, die Sie vielleicht schon einmal von Ihrem Entwickler gehört haben. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel?
+\end{flushleft}
+
+\closing{Mit freundlichen Grüßen}
+
+\removelastskip
+
+\end{letter}
+
+\end{document}

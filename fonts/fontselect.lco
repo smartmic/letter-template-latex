@@ -1,0 +1,8 @@
+\addtokomafont{fromname}{\sffamily}
+\addtokomafont{fromaddress}{\sffamily}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Calisto MT}
+\newfontfamily\headerfont[SmallCapsFont = Fontin Sans Small Caps]{Fontin Sans}
+\newfontfamily\footerfont{Fontin Sans}
+\setsansfont{Futura-Heavy}
+

@@ -1,0 +1,114 @@
+%% brief-template-latex
+%%
+%% Latex source files for customized letters
+%% 
+%% Copyright 2010,2017 Martin Michel
+%%
+%% The layout of this letter is CC-BY licensed, see
+%% https://creativecommons.org/licenses/by/3.0/
+%
+% This work consists of the files :
+% brief.tex
+% fonts/fontselect.lco
+% macros/custommargins.lco
+% macros/dateup.lco
+% macros/footseperated.lco
+% macros/fromaddressnew.lco
+% macros/nowindow.lco
+% macros/textwidth.lco
+%
+% The template uses the KOMA-Script class 'scrlttr2' (2010/06/17
+% v3.06) 
+% Please visit 
+%   https://sourceforge.net/projects/koma-script/ 
+% for download of latest version
+% 
+% Download or replace the appropriate fonts for customization
+
+% Check if the following is required on your Latex system
+\XeTeXinputencoding cp-1252
+
+% the key/value pairs are self-explanatory, change or comment them out
+% as appropriate
+\documentclass[
+ fontsize=12pt,         
+ paper=a4,             
+ DIV=14,              
+ BCOR=5mm,              
+ pagenumber=footcenter,
+ parskip=half*,       
+ german,              
+ raggedright
+ ]{scrlttr2}        
+
+\KOMAoptions{
+ fromalign=left,
+ fromrule=afteraddress,
+ fromphone=false,
+ fromemail=false,
+ fromurl=false,
+ foldmarks=false,
+ backaddress=true,
+ addrfield=true,
+ %footsepline=true,
+ %headsepline=true
+ enlargefirstpage=true
+}
+
+% Please change language/localization settings if necessary
+\usepackage{fontspec}
+\usepackage{xunicode}
+%\usepackage{xltxtra}
+\usepackage[ngerman]{babel}     
+%\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+
+
+\LoadLetterOption{DIN}
+\firsthead{
+   \flushright
+         \fontsize{20}{20}
+         \scshape
+         %\headerfont      % Uncomment to use specified header font
+         \usekomavar{fromname}\\[5mm]
+   %\hrule  height  1pt   % Uncomment to add a rule after your name
+}
+
+% Activate and edit this macro to change fonts or install the used ones (TTF):
+%\LoadLetterOption{fonts/fontselect}   
+
+% Enter your address / contact data here:
+\LoadLetterOption{macros/fromaddressnew}
+
+\LoadLetterOption{macros/custommargins}
+%\LoadLetterOption{macros/nowindow}
+%\LoadLetterOption{macros/dateup}
+\LoadLetterOption{macros/footseperated}   % Change language 
+\renewcommand*{\raggedsignature}{\raggedright}
+
+% Write the letter ...
+\begin{document}
+
+\begin{letter}{Empfänger}
+\setkomavar{toname}{$company \\ $addresee_name}
+\setkomavar{toaddress}{$addresee_street \\ $addresee_postal_code $addresee_city}
+\setkomavar{place}{$addresee_city}
+%\setkomavar{title}{}
+\setkomavar{subject}{$subject \\ Kundennummer $number}
+\setkomavar{signature}{$sender_name}
+
+\opening{Sehr geehrter Herr $addresee_name,}
+
+\begin{flushleft}
+$first_paragraph
+
+$second_paragraph
+\end{flushleft}
+
+\closing{Mit freundlichen Grüßen}
+
+\removelastskip
+
+\end{letter}
+
+\end{document}
