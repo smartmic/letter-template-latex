@@ -1,8 +1,8 @@
 \XeTeXinputencoding cp-1252
 \ProvidesFile{fromaddressnew.lco}
-\setkomavar{fromname}{Genevieve Boesch}
-\setkomavar{fromaddress}{Tiergartenstraße 1308\\ 48086 Waibstadt}
-\setkomavar{fromphone}{+49-07-471-68017\\ +49-50-691-76073}
-\setkomavar{frombank}{Online Bank\\ Nr. 4869 7293 6556 1378}
-\setkomavar{fromemail}{odelia6248@gmail.com}
+\setkomavar{fromname}{Waldi Schmid}
+\setkomavar{fromaddress}{Schönhauser Allee 622\\ 53003 Weißenburg}
+\setkomavar{fromphone}{+49-94-356-86832\\ +49-12-889-37555}
+\setkomavar{frombank}{Online Bank\\ Nr. 4071 6688 2424 1186}
+\setkomavar{fromemail}{phylicia8164@outlook.com}
 \endinput
