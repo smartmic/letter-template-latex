@@ -26,7 +26,7 @@ produces:
 Grab a (new) template
 ---------------------
 
-The dummy letters were generated with the help of Elizabeth_ for
+The dummy letters were generated with the help of *Elizabeth* for
 sourcing some random content. If you have Elizabeth and Python3
 installed, you can generate a new dummy letter as a template for your
 own by typing:: 
@@ -36,7 +36,10 @@ own by typing::
 
 Of course this step is not required and can easly be ignored.
 
+**Update**: Elizabeth is a deprecated package and is replaced by Mimesis_. 
+
 
 .. _Koma-Script: http://www.komascript.de
-.. _Elizabeth: http://elizabeth.readthedocs.io/en/latest/
+.. _Mimesis: https://mimesis.name/
+
 
